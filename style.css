@@ -20,10 +20,12 @@ body {
     display : flex ;
     justify-content : center ;
     align-items : center ;
-    transform : translateY(100vh) ;
+    transform : translateY(100vh) ; /*Just temporarily making it invisible so animation can work*/
     opacity : 0 ; /*Just temporarily making it invisible so animation can work*/
     /*The Animation*/
-    animation : intro1 3s ease-in-out 0s 1 normal forwards ;
+    animation : 
+        intro1-1 3s ease-in-out 0s 1 normal forwards ,
+        intro1-2 3s ease-in-out 3s 1 normal forwards
 }
 
 #container1 {
@@ -36,7 +38,7 @@ body {
     text-align : center ;
 }
 
-@keyframes intro1 {
+@keyframes intro1-1 {
 
     to {
         opacity : 1 ;
@@ -45,7 +47,52 @@ body {
 
 }
 
+@keyframes intro1-2 {
+
+    to {
+        transform : translateY(100vh) ;
+    }
+
+}
+
 /*Page2*/
+
+#gameChoiceIntro {
+    background-color : rgb(235, 213, 171) ;
+    height : 100vh ;
+    width : 100vw ;
+    position : absolute ;
+    z-index : 1.2 ;
+    display : flex ;
+    justify-items : center ;
+    align-items : center ;
+    transform : translateY(-100vh) ; /*Just temporarily making it invisible so animation can work*/
+    /*The Animation*/
+    animation : intro2-1 3s ease-in-out 3s 1 normal forwards ;
+}
+
+#container2 {
+    width : 100vw ;
+}
+
+.intro2 {
+    color : rgb(27, 33, 26) ;
+    font-size : 10vw ;
+    text-align : center ;
+}
+
+@keyframes intro2-1 {
+
+    to {
+        transform : translateY(0vh) ;
+    }
+
+}
+
+/*Page3*/
+
+
+
 
 
 

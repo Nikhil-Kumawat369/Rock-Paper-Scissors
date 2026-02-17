@@ -7,8 +7,10 @@ body {
     background-color : rgb(27, 33, 26) ;
     min-height : 100vh ;
     min-width : 100vw ;
+    overflow : hidden ;
 }
 
+/*Page1*/
 #gameNameIntro {
     background-color : rgb(235, 213, 171) ;
     height : 100vh ;
@@ -18,7 +20,7 @@ body {
     display : flex ;
     justify-content : center ;
     align-items : center ;
-    top : 100vh ;
+    transform : translateY(100vh) ;
     opacity : 0 ; /*Just temporarily making it invisible so animation can work*/
     /*The Animation*/
     animation : intro1 3s ease-in-out 0s 1 normal forwards ;
@@ -36,17 +38,16 @@ body {
 
 @keyframes intro1 {
 
-    from {
-        opacity : 0 ;
-        top : 100vh ;
-    }
-
     to {
         opacity : 1 ;
-        top : 0 ;
+        transform : translateY(0vh) ;
     }
 
 }
+
+/*Page2*/
+
+
 
 
 

@@ -192,3 +192,211 @@ body {
 
 }
 
+/* Computer Reply Pages */
+
+.computerChoice {
+    background-color : rgb(27, 33, 26) ;
+    height : 100vh ;
+    width : 50vw ;
+    position : absolute ;
+    z-index : 2.1 ;
+    left : 50vw ;
+    transform : translateX(50vw) ;
+}
+
+#computerChoiceRock {
+    background-image : url("/Rock-Paper-Scissors-F/Images/rock.png") ;
+    background-repeat : no-repeat ;
+    background-size : 60% ;
+    background-position : center ;
+}
+
+#computerChoicePaper {
+    background-image : url("/Rock-Paper-Scissors-F/Images/paper.png") ;
+    background-repeat : no-repeat ;
+    background-size : 40% ;
+    background-position : center ;
+}
+
+#computerChoiceScissor {
+    background-image : url("/Rock-Paper-Scissors-F/Images/scissor.png") ;
+    background-repeat : no-repeat ;
+    background-size : 60% ;
+    background-position : center ;
+}
+
+/* User choices hidden pages */
+#choiceRock2 {
+    background-color : rgb(137, 152, 109) ;
+    height : 100vh ;
+    width : 100vw ;
+    position : absolute ;
+    z-index : 2 ;
+    background-image : url("/Rock-Paper-Scissors-F/Images/rock.png") ;
+    background-repeat : no-repeat ;
+    background-size : 60% ;
+    background-position : center ;
+    transform : translateY(100vw) ; /* Just temporarily making it invisible so animation can work */
+}
+
+#choiceScissor2 {
+    background-color : rgb(156, 171, 132) ;
+    height : 100vh ;
+    width : 100vw ;
+    position : absolute ;
+    z-index : 2 ;
+    background-image : url("/Rock-Paper-Scissors-F/Images/scissor.png") ;
+    background-repeat : no-repeat ;
+    background-size : 40% ;
+    background-position : center ;
+    transform : translateY(100vw) ; /*Just temporarily making it invisible so animation can work*/
+}
+
+#choicePaper2 {
+    background-color : rgb(235, 213, 171) ;
+    height : 100vh ;
+    width : 100vw ;
+    position : absolute ;
+    z-index : 2 ;
+    background-image : url("/Rock-Paper-Scissors-F/Images/paper.png") ;
+    background-repeat : no-repeat ;
+    background-size : 60% ;
+    background-position : center ;
+    transform : translateY(100vw) ; /*Just temporarily making it invisible so animation can work*/
+}
+
+/* Creating animations for each choice */
+
+/* If User Draws */
+
+/* animation : 
+    selectedChoice-1 3s ease-in-out 0s 1 normal forwards ,
+    selectedChoice-2 3s ease-in-out 3s 1 normal forwards ; */
+/* animation : computerSelected 3s ease-in-out 3s 1 normal forwards ; */
+
+@keyframes selectedChoice-1 {
+
+    to {
+        transform : translateY(0vw) ;
+    }
+
+}
+
+@keyframes selectedChoice-2 {
+
+    to {
+        width : 50vw ;
+    }
+
+}
+
+@keyframes computerSelected {
+
+    to {
+        transform : translateX(0vw) ;
+    }
+
+}
+
+
+/* If User Wins */
+
+/* animation : 
+    selectedChoice-1w 3s ease-in-out 0s 1 normal forwards ,
+    selectedChoice-2w 3s ease-in-out 3s 1 normal forwards ,
+    selectedChoice-3w 3s ease-in-out 6s 1 normal forwards ; */
+/* animation : 
+    computerSelected-1w 3s ease-in-out 3s 1 normal forwards ,
+    computerSelected-2w 3s ease-in-out 6s 1 normal forwards ; */
+
+@keyframes selectedChoice-1w {
+
+    to {
+        transform : translateY(0vw) ;
+    }
+
+}
+
+@keyframes selectedChoice-2w {
+
+    to {
+        width : 50vw ;
+    }
+
+}
+
+@keyframes selectedChoice-3w {
+
+    to {
+        width : 100vw ;
+    }
+
+}
+
+@keyframes computerSelected-1w {
+
+    to {
+        transform : translateX(0vw) ;
+    }
+
+}
+
+@keyframes computerSelected-2w {
+
+    to {
+        transform : translateX(50vw) ;
+    }
+
+}
+
+/* If User Loses */
+
+/* animation : 
+    selectedChoice-1l 3s ease-in-out 0s 1 normal forwards ,
+    selectedChoice-2l 3s ease-in-out 3s 1 normal forwards ,
+    selectedChoice-3l 3s ease-in-out 6s 1 normal forwards ; */
+/* animation : 
+    computerSelected-1l 3s ease-in-out 3s 1 normal forwards ,
+    computerSelected-2l 3s ease-in-out 6s 1 normal forwards ; */
+
+@keyframes selectedChoice-1l {
+
+    to {
+        transform : translateY(0vw) ;
+    }
+
+}
+
+@keyframes selectedChoice-2l {
+
+    to {
+        width : 50vw ;
+    }
+
+}
+
+@keyframes selectedChoice-3l {
+
+    to {
+        transform : translateX(-50vw) ;
+    }
+
+}
+
+@keyframes computerSelected-1l {
+
+    to {
+        transform : translateX(0vw) ;
+    }
+
+}
+
+@keyframes computerSelected-2l {
+
+    to {
+        width : 100vw ;
+        transform : translateX(-50vw) ;
+    }
+
+}
+

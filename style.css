@@ -411,7 +411,7 @@ body {
     display : flex ;
     justify-content : center ;
     align-items : center ;
-    transform : translateY(100vw) ;
+    transform : translateY(100vh) ;
 }
 
 #finalMsgContainer {
@@ -451,6 +451,37 @@ body {
     border-top : 1px solid rgb(0 , 0 , 0) ;
     border-left : 1px solid rgb(0 , 0 , 0) ;
     transform : translateY(2px) ;
+}
+
+/* The final animation */
+
+/* animation : moveUp 3s ease-in-out 9s 1 normal forwards */
+@keyframes moveUp {
+
+    to {
+        transform : translateY(-100vh) ;
+    }
+
+}
+
+/* This is specially for scissor end */
+/* animation : moveUpSpecial 3s ease-in-out 9s 1 normal forwards */
+@keyframes moveUpSpecial {
+
+    to {
+        
+        transform : translate(-50vw , -100vh) ;
+    }
+
+}
+
+/* animation : moveUpFinalPage 3s ease-in-out 9s 1 normal forwards */
+@keyframes moveUpFinalPage {
+
+    to {
+        transform : translateY(0vh) ;
+    }
+
 }
 
 

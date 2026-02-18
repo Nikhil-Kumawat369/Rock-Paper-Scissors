@@ -272,7 +272,8 @@ body {
 /* animation : 
     selectedChoice-1 3s ease-in-out 0s 1 normal forwards ,
     selectedChoice-2 3s ease-in-out 3s 1 normal forwards ; */
-/* animation : computerSelected 3s ease-in-out 3s 1 normal forwards ; */
+/* animation : 
+    computerSelected 3s ease-in-out 3s 1 normal forwards ; */
 
 @keyframes selectedChoice-1 {
 
@@ -297,7 +298,6 @@ body {
     }
 
 }
-
 
 /* If User Wins */
 
@@ -399,4 +399,60 @@ body {
     }
 
 }
+
+/* The final Page */
+
+#finalPage {
+    background-color : rgb(229, 180, 120) ;
+    height : 100vh ;
+    width : 100vw ;
+    position : absolute ;
+    z-index : 150 ;
+    display : flex ;
+    justify-content : center ;
+    align-items : center ;
+    transform : translateY(100vw) ;
+}
+
+#finalMsgContainer {
+    width : 100vw ;
+}
+
+#finalMsg {
+    color : rgb(27, 33, 26) ;
+    text-align : center ;
+    font-size : 15em ;
+    position : relative ;
+    bottom : 15vh ;
+}
+
+#playAgain {
+    background-color : rgb(243, 244, 244) ;
+    font-size : 1.5em ;
+    font-weight : 900 ;
+    height : 8vh ;
+    width : 15vw ;
+    border-radius : 15% / 50% ;
+
+    /* Positioning it in center */
+    position : relative ;
+    left : 42.5vw ;
+
+    /*Making the button click realistic by adding shadow to its deActivated state*/
+    box-shadow : 2px 4px 8px 0px rgba(0 , 0 , 0 , 0.75) ;
+    border-top : 1px solid rgb(243, 244, 244) ;
+    border-left : 1px solid rgb(243, 244, 244) ;
+}
+
+#playAgain:active {
+    box-shadow : inset 2px 4px 8px 0px rgba(0 , 0 , 0 , 0.75) ;
+    border-bottom : 1px solid rgb(243, 244, 244) ;
+    border-right : 1px solid rgb(243, 244, 244) ;
+    border-top : 1px solid rgb(0 , 0 , 0) ;
+    border-left : 1px solid rgb(0 , 0 , 0) ;
+    transform : translateY(2px) ;
+}
+
+
+
 

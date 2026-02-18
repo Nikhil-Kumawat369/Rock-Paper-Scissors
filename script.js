@@ -70,7 +70,6 @@ var userChoice = 100 ;
 var computerChoice = Math.floor((Math.random()*3)) ; // Range (0 - 2) 0 : R | 1 : S | 2 : P
 
 
-
 // Adding animation based on users choice
 
 // If user selects Rock
@@ -152,7 +151,7 @@ choices[2].addEventListener("click" , () => {
 
     }else {
 
-        choices2[userChoice].style.animation = "selectedChoice-1 3s ease-in-out 0s 1 normal forwards , selectedChoice-2 3s ease-in-out 3s 1 normal forwards" ;
+        choices2[userChoice].style.animation = "selectedChoice-1 3s ease-in-out 0s 1 normal forwards , selectedChoice-2 3s ease-in-out 3s 1 normal forwards , selectedChoice-3 3s ease-in-out 6s 1 normal forwards" ;
         computerChoices[computerChoice].style.animation = "computerSelected 3s ease-in-out 3s 1 normal forwards" ;
         setTimeout(() => {
             choices[1].style.display = "none" ;

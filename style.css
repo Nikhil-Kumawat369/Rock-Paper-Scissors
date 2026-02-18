@@ -214,14 +214,14 @@ body {
 #computerChoicePaper {
     background-image : url("/Rock-Paper-Scissors-F/Images/paper.png") ;
     background-repeat : no-repeat ;
-    background-size : 40% ;
+    background-size : 60% ;
     background-position : center ;
 }
 
 #computerChoiceScissor {
     background-image : url("/Rock-Paper-Scissors-F/Images/scissor.png") ;
     background-repeat : no-repeat ;
-    background-size : 60% ;
+    background-size : 40% ;
     background-position : center ;
 }
 

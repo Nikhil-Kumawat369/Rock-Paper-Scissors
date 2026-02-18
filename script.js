@@ -95,8 +95,10 @@ choices[1].addEventListener("click" , () => {
 
     if (result === "Win") { 
 
-        choices2[userChoice].style.animation = "selectedChoice-1w 3s ease-in-out 0s 1 normal forwards , selectedChoice-2w 3s ease-in-out 3s 1 normal forwards , selectedChoice-3w 3s ease-in-out 6s 1 normal forwards" ;
-        computerChoices[computerChoice].style.animation = "computerSelected-1w 3s ease-in-out 3s 1 normal forwards , computerSelected-2w 3s ease-in-out 6s 1 normal forwards" ;
+        // The animation is flipped for few thing so reanimating is a headache so its juts a quick fix
+
+        choices2[userChoice].style.animation = "selectedChoice-1 3s ease-in-out 0s 1 normal forwards , selectedChoice-2 3s ease-in-out 3s 1 normal forwards" ;
+        computerChoices[computerChoice].style.animation = "computerSelected 3s ease-in-out 3s 1 normal forwards" ;
         setTimeout(() => {
             choices[1].style.display = "none" ;
             choices[2].style.display = "none" ;
@@ -113,8 +115,10 @@ choices[1].addEventListener("click" , () => {
 
     }else {
 
-        choices2[userChoice].style.animation = "selectedChoice-1 3s ease-in-out 0s 1 normal forwards , selectedChoice-2 3s ease-in-out 3s 1 normal forwards" ;
-        computerChoices[computerChoice].style.animation = "computerSelected 3s ease-in-out 3s 1 normal forwards" ;
+        // The animation is flipped for few thing so reanimating is a headache so its juts a quick fix
+
+        choices2[userChoice].style.animation = "selectedChoice-1w 3s ease-in-out 0s 1 normal forwards , selectedChoice-2w 3s ease-in-out 3s 1 normal forwards , selectedChoice-3w 3s ease-in-out 6s 1 normal forwards" ;
+        computerChoices[computerChoice].style.animation = "computerSelected-1w 3s ease-in-out 3s 1 normal forwards , computerSelected-2w 3s ease-in-out 6s 1 normal forwards" ;
         setTimeout(() => {
             choices[1].style.display = "none" ;
             choices[2].style.display = "none" ;
@@ -142,8 +146,10 @@ choices[2].addEventListener("click" , () => {
 
     }else if (result === "Lose") {
 
-        choices2[userChoice].style.animation = "selectedChoice-1l 3s ease-in-out 0s 1 normal forwards , selectedChoice-2l 3s ease-in-out 3s 1 normal forwards , selectedChoice-3l 3s ease-in-out 6s 1 normal forwards" ;
-        computerChoices[computerChoice].style.animation = "computerSelected-1l 3s ease-in-out 3s 1 normal forwards , computerSelected-2l 3s ease-in-out 6s 1 normal forwards" ;
+        // The animation is flipped for few thing so reanimating is a headache so its juts a quick fix
+
+        choices2[userChoice].style.animation = "selectedChoice-1 3s ease-in-out 0s 1 normal forwards , selectedChoice-2 3s ease-in-out 3s 1 normal forwards , selectedChoice-3 3s ease-in-out 6s 1 normal forwards" ;
+        computerChoices[computerChoice].style.animation = "computerSelected 3s ease-in-out 3s 1 normal forwards" ;
         setTimeout(() => {
             choices[1].style.display = "none" ;
             choices[2].style.display = "none" ;
@@ -151,8 +157,10 @@ choices[2].addEventListener("click" , () => {
 
     }else {
 
-        choices2[userChoice].style.animation = "selectedChoice-1 3s ease-in-out 0s 1 normal forwards , selectedChoice-2 3s ease-in-out 3s 1 normal forwards , selectedChoice-3 3s ease-in-out 6s 1 normal forwards" ;
-        computerChoices[computerChoice].style.animation = "computerSelected 3s ease-in-out 3s 1 normal forwards" ;
+        // The animation is flipped for few thing so reanimating is a headache so its juts a quick fix
+
+        choices2[userChoice].style.animation = "selectedChoice-1l 3s ease-in-out 0s 1 normal forwards , selectedChoice-2l 3s ease-in-out 3s 1 normal forwards , selectedChoice-3l 3s ease-in-out 6s 1 normal forwards" ;
+        computerChoices[computerChoice].style.animation = "computerSelected-1l 3s ease-in-out 3s 1 normal forwards , computerSelected-2l 3s ease-in-out 6s 1 normal forwards" ;
         setTimeout(() => {
             choices[1].style.display = "none" ;
             choices[2].style.display = "none" ;

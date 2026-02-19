@@ -236,7 +236,7 @@ body {
     background-repeat : no-repeat ;
     background-size : 60% ;
     background-position : center ;
-    transform : translateY(100vw) ; /* Just temporarily making it invisible so animation can work */
+    transform : translateY(100vh) ; /* Just temporarily making it invisible so animation can work */
 }
 
 #choiceScissor2 {
@@ -249,7 +249,7 @@ body {
     background-repeat : no-repeat ;
     background-size : 40% ;
     background-position : center ;
-    transform : translateY(100vw) ; /*Just temporarily making it invisible so animation can work*/
+    transform : translateY(100vh) ; /*Just temporarily making it invisible so animation can work*/
 }
 
 #choicePaper2 {
@@ -262,7 +262,7 @@ body {
     background-repeat : no-repeat ;
     background-size : 60% ;
     background-position : center ;
-    transform : translateY(100vw) ; /*Just temporarily making it invisible so animation can work*/
+    transform : translateY(100vh) ; /*Just temporarily making it invisible so animation can work*/
 }
 
 /* Creating animations for each choice */
@@ -278,7 +278,7 @@ body {
 @keyframes selectedChoice-1 {
 
     to {
-        transform : translateY(0vw) ;
+        transform : translateY(0vh) ;
     }
 
 }
@@ -294,7 +294,7 @@ body {
 @keyframes computerSelected {
 
     to {
-        transform : translateX(0vw) ;
+        transform : translateX(0vh) ;
     }
 
 }
@@ -312,7 +312,7 @@ body {
 @keyframes selectedChoice-1w {
 
     to {
-        transform : translateY(0vw) ;
+        transform : translateY(0vh) ;
     }
 
 }
@@ -362,7 +362,7 @@ body {
 @keyframes selectedChoice-1l {
 
     to {
-        transform : translateY(0vw) ;
+        transform : translateY(0vh) ;
     }
 
 }

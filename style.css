@@ -421,14 +421,14 @@ body {
 #finalMsg {
     color : rgb(27, 33, 26) ;
     text-align : center ;
-    font-size : 15em ;
+    font-size : 25vw ;
     position : relative ;
     bottom : 15vh ;
 }
 
 #playAgain {
     background-color : rgb(243, 244, 244) ;
-    font-size : 1.5em ;
+    font-size : 2vw ;
     font-weight : 900 ;
     height : 8vh ;
     width : 15vw ;
@@ -483,7 +483,6 @@ body {
     }
 
 }
-
 
 
 

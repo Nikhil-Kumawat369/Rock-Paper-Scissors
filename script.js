@@ -1,7 +1,3 @@
-// Cloning the dull body so i could reset it in future code through a playAgain button
-let body = window.document.body ;
-const newBody = body.cloneNode(true) ;
-
 // 0 : R | 1 : S | 2 : P
 function checkWin (usersChoice , computersChoice) {
 
@@ -87,7 +83,6 @@ let playAgainButton = window.document.querySelector("#playAgain") ;
 var userChoice = 100 ;
 
 var computerChoice = Math.floor((Math.random()*3)) ; // Range (0 - 2) 0 : R | 1 : S | 2 : P
-computerChoice = 2 ;
 
 // Adding animation based on users choice
 
@@ -217,19 +212,8 @@ choices[2].addEventListener("click" , () => {
 
 playAgainButton.addEventListener("click" , () => {
 
-    body.parentElement.replaceChild(newBody , body) ;
-    body = newBody ;
+    window.location.reload() ;
 
 }) ;
-
-
-
-
-
-
-
-
-
-
 
 

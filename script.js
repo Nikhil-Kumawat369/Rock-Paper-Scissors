@@ -43,6 +43,10 @@ function actionAfterMove (result , usersChoice , computersChoice) {
         finalLastPage.style.animation = "moveUpFinalPage 3s ease-in-out 9s 1 normal forwards" ;
         finalMsg.innerText = "Lose" ;
 
+        choices[0].style.animation = "finalMoveUpRock 3s ease-in-out 0s 1 normal forwards" ;
+        choices[1].style.animation = "finalMoveUpScissor 3s ease-in-out 0s 1 normal forwards" ;
+        choices[2].style.animation = "finalMoveUpPaper 3s ease-in-out 0s 1 normal forwards" ;
+
     }else if (result === "Lose") {
         // Sry the animations are reverse i by mistakenly made them opp , Win animation -> actually Lose animation & Vice Versa
 
@@ -57,6 +61,10 @@ function actionAfterMove (result , usersChoice , computersChoice) {
         finalLastPage.style.animation = "moveUpFinalPage 3s ease-in-out 9s 1 normal forwards" ;
         finalMsg.innerText = "Win" ;
 
+        choices[0].style.animation = "finalMoveUpRock 3s ease-in-out 0s 1 normal forwards" ;
+        choices[1].style.animation = "finalMoveUpScissor 3s ease-in-out 0s 1 normal forwards" ;
+        choices[2].style.animation = "finalMoveUpPaper 3s ease-in-out 0s 1 normal forwards" ;
+
     }else {
 
         choices2[usersChoice].style.animation = "selectedChoice-1 3s ease-in-out 0s 1 normal forwards , selectedChoice-2 3s ease-in-out 3s 1 normal forwards , moveUp 3s ease-in-out 6s 1 normal forwards" ;
@@ -69,6 +77,10 @@ function actionAfterMove (result , usersChoice , computersChoice) {
 
         finalLastPage.style.animation = "moveUpFinalPage 3s ease-in-out 6s 1 normal forwards" ;
         finalMsg.innerText = "Draw" ;
+
+        choices[0].style.animation = "finalMoveUpRock 3s ease-in-out 0s 1 normal forwards" ;
+        choices[1].style.animation = "finalMoveUpScissor 3s ease-in-out 0s 1 normal forwards" ;
+        choices[2].style.animation = "finalMoveUpPaper 3s ease-in-out 0s 1 normal forwards" ;
 
     } ;
 
@@ -122,6 +134,10 @@ choices[1].addEventListener("click" , () => {
         finalLastPage.style.animation = "moveUpFinalPage 3s ease-in-out 6s 1 normal forwards" ;
         finalMsg.innerText = "Draw" ;
 
+        choices[0].style.animation = "finalMoveUpRock 3s ease-in-out 0s 1 normal forwards" ;
+        choices[1].style.animation = "finalMoveUpScissor 3s ease-in-out 0s 1 normal forwards" ;
+        choices[2].style.animation = "finalMoveUpPaper 3s ease-in-out 0s 1 normal forwards" ;
+
     }else if (result === "Lose") {
 
         choices2[userChoice].style.animation = "selectedChoice-1l 3s ease-in-out 0s 1 normal forwards , selectedChoice-2l 3s ease-in-out 3s 1 normal forwards , selectedChoice-3l 3s ease-in-out 6s 1 normal forwards , moveUpSpecial 3s ease-in-out 9s 1 normal forwards" ;
@@ -134,6 +150,10 @@ choices[1].addEventListener("click" , () => {
 
         finalLastPage.style.animation = "moveUpFinalPage 3s ease-in-out 9s 1 normal forwards" ;
         finalMsg.innerText = "Lose" ;
+
+        choices[0].style.animation = "finalMoveUpRock 3s ease-in-out 0s 1 normal forwards" ;
+        choices[1].style.animation = "finalMoveUpScissor 3s ease-in-out 0s 1 normal forwards" ;
+        choices[2].style.animation = "finalMoveUpPaper 3s ease-in-out 0s 1 normal forwards" ;
 
     }else {
 
@@ -149,6 +169,10 @@ choices[1].addEventListener("click" , () => {
 
         finalLastPage.style.animation = "moveUpFinalPage 3s ease-in-out 9s 1 normal forwards" ;
         finalMsg.innerText = "Win" ;
+
+        choices[0].style.animation = "finalMoveUpRock 3s ease-in-out 0s 1 normal forwards" ;
+        choices[1].style.animation = "finalMoveUpScissor 3s ease-in-out 0s 1 normal forwards" ;
+        choices[2].style.animation = "finalMoveUpPaper 3s ease-in-out 0s 1 normal forwards" ;
 
     } ;
 
@@ -174,6 +198,10 @@ choices[2].addEventListener("click" , () => {
         finalLastPage.style.animation = "moveUpFinalPage 3s ease-in-out 9s 1 normal forwards" ;
         finalMsg.innerText = "Win" ;
 
+        choices[0].style.animation = "finalMoveUpRock 3s ease-in-out 0s 1 normal forwards" ;
+        choices[1].style.animation = "finalMoveUpScissor 3s ease-in-out 0s 1 normal forwards" ;
+        choices[2].style.animation = "finalMoveUpPaper 3s ease-in-out 0s 1 normal forwards" ;
+
     }else if (result === "Lose") {
 
         // The animation is flipped for few thing so reanimating is a headache so its juts a quick fix
@@ -189,6 +217,10 @@ choices[2].addEventListener("click" , () => {
         finalLastPage.style.animation = "moveUpFinalPage 3s ease-in-out 6s 1 normal forwards" ;
         finalMsg.innerText = "Draw" ;
 
+        choices[0].style.animation = "finalMoveUpRock 3s ease-in-out 0s 1 normal forwards" ;
+        choices[1].style.animation = "finalMoveUpScissor 3s ease-in-out 0s 1 normal forwards" ;
+        choices[2].style.animation = "finalMoveUpPaper 3s ease-in-out 0s 1 normal forwards" ;
+
     }else {
 
         // The animation is flipped for few thing so reanimating is a headache so its juts a quick fix
@@ -203,6 +235,10 @@ choices[2].addEventListener("click" , () => {
 
         finalLastPage.style.animation = "moveUpFinalPage 3s ease-in-out 9s 1 normal forwards" ;
         finalMsg.innerText = "Lose" ;
+
+        choices[0].style.animation = "finalMoveUpRock 3s ease-in-out 0s 1 normal forwards" ;
+        choices[1].style.animation = "finalMoveUpScissor 3s ease-in-out 0s 1 normal forwards" ;
+        choices[2].style.animation = "finalMoveUpPaper 3s ease-in-out 0s 1 normal forwards" ;
 
     } ;
 

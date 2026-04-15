@@ -3,11 +3,6 @@
 An animated Rock Paper Scissors web game built using HTML, CSS, and JavaScript.
 This project focuses heavily on CSS animations to create smooth page transitions and engaging visual effects.
 
-## 🌐 Live Demo
-
-🔗 **Deployed here:**  
-Add link after deploying
-
 ## 🚀 Features
 
 - 🎬 Multi-page animated intro
